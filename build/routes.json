@@ -42734,6 +42734,44 @@
       "name": "毕马威"
     }
   },
+  "ktown4u": {
+    "routes": {
+      "/artistBrandlist/:grp_no/:grp_no2?": {
+        "path": "/artistBrandlist/:grp_no/:grp_no2?",
+        "categories": [
+          "shopping"
+        ],
+        "example": "ktown4u/artistBrandlist/234590/1723449",
+        "parameters": {
+          "grp_no": "artist id (Get in url)",
+          "grp_no2": "product category id (Get in url), empty for all categories"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "cn.ktown4u.com/artistBrandlist?grp_no=:grp_no&grp_no2=:grp_no2"
+            ],
+            "target": "/artistBrandlist/:grp_no/:grp_no2"
+          }
+        ],
+        "name": "Get the products on sale",
+        "maintainers": [
+          "JamesWDGu"
+        ],
+        "location": "artist-brandlist.ts"
+      }
+    },
+    "name": "Ktown4u",
+    "url": "ktown4u.com"
+  },
   "kuaidi100": {
     "routes": {
       "/track/:number/:id/:phone?": {

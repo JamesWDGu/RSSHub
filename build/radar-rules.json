@@ -15189,6 +15189,19 @@
       }
     ]
   },
+  "ktown4u.com": {
+    "_name": "Ktown4u",
+    "cn": [
+      {
+        "title": "Get the products on sale",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
+          "/artistBrandlist?grp_no=:grp_no&grp_no2=:grp_no2"
+        ],
+        "target": "/ktown4u/artistBrandlist/:grp_no/:grp_no2"
+      }
+    ]
+  },
   "kuaidi100.com": {
     "_name": "快递 100",
     ".": [
